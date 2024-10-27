@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+    font-family:'Courier New', Courier, monospace;
+    text-align: justify;
+    color:brown;
+}
+
+h1{
+    text-align: center;
+}
+
+.ejercicios{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ margin: 20px;
+ gap: 30px;
+}
+
+.ejercicio1 img{
+    width: 400px;
+    height: 400px;
+}
+.stickers {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* border: 1px solid red; */
+    margin-top: 5px;
+}
+.stickers img{
+    width: 120px;
+
+}
+
+.input{
+    display: flex;
+    gap: 20 px;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+
+}
+
+.input input{
+    width: 120px;
+    margin-top: 3px;
+
+}
+

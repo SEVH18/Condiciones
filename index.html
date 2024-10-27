@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Condiciones</title>
+  </head>
+  <body>
+    <h1>Desafio Condicionales</h1>
+    <div class="ejercicios">
+      <section class="ejercicio1">
+        <h2>Ejercicio Nro1</h2>
+        <p>
+          1. Se debe construir una página con una única imagen, al hacerle click
+          a la imagen se le debe agregar un borde rojo de 2 pixeles, al hacerle
+          click nuevamente se le debe quitar el borde.
+        </p>
+        <img src="./assets/img/paisaje.webp" alt="paisaje de lago"  class="paisaje" onclick="
+        img = document.querySelector('.paisaje')
+        if(img.style.border){
+            img.style.border = ''
+        }else if(img.style.border == 0){
+            img.style.border = '2px solid red'
+        }"
+         />
+      </section>
+      <section class="ejercicio 2">
+        <h2>Ejercicio Nro2</h2>
+        <p>
+          Se debe construir una página web que permita pedir hasta 10 stickers
+          de los 3 tipos disponibles. Para eso deberá existir un input debajo de
+          cada imagen donde el usuario podrá ingresar un número. En caso de que
+          la suma de todos los stickers seleccionados sea menor o igual 10 se
+          indicará en un párrafo nuevo la cantidad de stickers llevados. Ejemplo
+          "llevas 5 stickers" en cualquier otro caso se mostrará un texto que
+          dice "Llevas demasiados stickers"
+        </p>
+        <div class="stickers">
+            <img src="./assets/img/flag-mexico.png" alt="">
+            <img src="./assets/img/Flag_of_Chile.svg.png" alt="">
+            <img src="./assets/img/Flag_of_Colombia.svg.png" alt="">
+        </div>
+        <div class="input">
+            <input type="text" name="" id=""> <input type="text" name="" id=""> <input type="text" name="" id="">
+        </div>
+      </section>
+      <section>
+        <h2>Ejercicio Nro3</h2>
+        <p>
+          Se debe construir una página con 3 select y opciones con dígitos del 1
+          al 9, al hacer click a la opción ingresar se debe verificar que el
+          password sea 911 y en ese caso mostrar debajo del botón ingresar, un
+          párrafo con el contenido "password 1 correcto", en caso de que el
+          password sea 714 se debe mostrar en el párrafo "password 2 es
+          correcto", si ingresa otro valor se debe mostrar "password
+          incorrecto".
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
