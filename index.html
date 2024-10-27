@@ -71,6 +71,57 @@
           correcto", si ingresa otro valor se debe mostrar "password
           incorrecto".
         </p>
+        <label for="primerdigito">Digito 1:</label>
+        <select name="" id="primerdigito">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <label for="segundodigito">Digito 2:</label>
+        <select name="" id="segundodigito">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <label for="tercerdigito">Digito 3:</label>
+        <select name="" id="tercerdigito">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <button onclick="
+        primerDigito = document.querySelector('#primerdigito').value
+        segundoDigito = document.querySelector('#segundodigito').value
+        tercerDigito = document.querySelector('#tercerdigito').value
+        password = primerDigito + segundoDigito + tercerDigito
+        resultado = document.querySelector('.resultado-password')
+        if(password === '911'){
+            resultado.innerHTML = 'password 1 correcto'
+        }else if(password === '714'){
+            resultado.innerHTML = 'password 2 correcto'
+        }else{
+            resultado.innerHTML = 'password incorrecto'
+        }
+        ">Ingresar</button>
+        <p class="resultado-password"></p>
       </section>
     </div>
   </body>
