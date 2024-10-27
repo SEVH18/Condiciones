@@ -42,8 +42,23 @@
             <img src="./assets/img/Flag_of_Colombia.svg.png" alt="">
         </div>
         <div class="input">
-            <input type="text" name="" id=""> <input type="text" name="" id=""> <input type="text" name="" id="">
+            <input type="text" name="" id="mexico"> <input type="text" name="" id="chile"> <input type="text" name="" id="colombia">
         </div>
+        <button onclick="
+        stickerMexico = document.querySelector('#mexico').value
+        stickerChile = document.querySelector('#chile').value
+        stickerColombia = document.querySelector('#colombia').value
+        parrafoResultado = document.querySelector('.resultado-stickers')
+        resultado = Number(stickerMexico) + Number(stickerChile) + Number(stickerColombia)
+        if(resultado > 10){
+            parrafoResultado.innerText = 'Llevas demasiados stickers'
+
+        }else{
+            parrafoResultado.innerText =  'Llevas '+ resultado + ' Stickers'
+        }
+        "
+        >Pedir mis stickers</button>
+        <p class="resultado-stickers"></p>
       </section>
       <section>
         <h2>Ejercicio Nro3</h2>
